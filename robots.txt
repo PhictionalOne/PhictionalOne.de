@@ -1,0 +1,6 @@
+# robots.txt zu http://phictional.de
+
+User-agent: *
+Disallow: /assets/
+Disallow: /wallpaper.php
+Disallow: impressum.html

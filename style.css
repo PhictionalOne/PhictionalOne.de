@@ -1,0 +1,282 @@
+:root {
+    --color-turquoise-2: #00fff5;
+    /* img-sea */
+    --color-olive-light: #d8ca9d;
+    /* img-olivetree */
+    --color-olive: #a09061;
+    /* img-ceiling img-cliff */
+    --color-sunset-orange: #d43e00;
+    /* img-sunset */
+    --color-orange: #ff8a30;
+    /* img-gate */
+
+    /* Background Images in Asset folder */
+    --img-olivetree: url('/assets/olivetree-50.jpg');
+    --img-sea: url('/assets/sea-50.jpg');
+    --img-sunset: url('/assets/sunset-3-50.jpg');
+    --img-ceiling: url('/assets/ceiling-50.jpg');
+    --img-cliff: url('/assets/cliff-2-50.jpg');
+    --img-gate: url('/assets/gate-2-50.jpg');
+
+}
+
+/* 
+* W3-SCHOOLS SHIT 
+*/
+
+/*HTML*/
+html {
+    box-sizing: border-box
+}
+/*
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+html{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+/*BODY*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+/*DISPLAY-CONTAINER*/
+.display-container {
+    position: relative
+}
+
+.text {
+    display: none
+}
+
+.text {
+    display: inline-block
+}
+
+.display-container:hover .display-hover {
+    display: block
+}
+
+.display-container:hover span.display-hover {
+    display: inline-block
+}
+
+.display-hover {
+    display: none
+}
+
+/*ANIMATE-OPACITY*/
+.animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*TEXT-WHITE*/
+.text-white,
+.hover-text-white:hover {
+    color: #fff !important
+}
+
+/*DISPLAY-MIDDLE*/
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+/*JUMBO*/
+.xlarge {
+    font-size: 24px !important
+}
+
+.xxlarge {
+    font-size: 36px !important
+}
+
+.xxxlarge {
+    font-size: 48px !important
+}
+
+.jumbo {
+    font-size: 64px !important
+}
+
+/*ANIMATE-TOP*/
+.animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/*BORDER-GREY*/
+.border-grey,
+.hover-border-grey:hover,
+.border-gray,
+.hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+/*LARGE*/
+.tiny {
+    font-size: 10px !important
+}
+
+.small {
+    font-size: 12px !important
+}
+
+.medium {
+    font-size: 15px !important
+}
+
+.large {
+    font-size: 18px !important
+}
+
+/*CENTER*/
+.bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.center .bar {
+    display: inline-block;
+    width: auto
+}
+
+.bar-block.center .bar-item {
+    text-align: center
+}
+
+.block {
+    display: block;
+    width: 100%
+}
+
+/*DISPLAY-BOTTOMRIGHT*/
+.display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+/*PADDING-LARGE*/
+.padding-small {
+    padding: 4px 8px !important
+}
+
+.padding {
+    padding: 8px 16px !important
+}
+
+.padding-large {
+    padding: 12px 24px !important
+}
+
+/*XLARGE*/
+.xlarge {
+    font-size: 24px !important
+}
+
+.xxlarge {
+    font-size: 36px !important
+}
+
+.xxxlarge {
+    font-size: 48px !important
+}
+
+.jumbo {
+    font-size: 64px !important
+}
+
+
+/* MY STUFF */
+
+
+body,
+h1 {
+    font-family: "Raleway", sans-serif;
+    text-shadow: 1px 1px 40px #000000;
+}
+
+body,
+html {
+    height: 100%
+}
+
+.bgimg {
+    background-color: dimgrey;
+    background-image: var(--img-background);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.emp {
+    font-family: roboto, monospaced;
+    color: var(--color-highlight);
+}
+
+.icon:hover {
+    color: var(--color-highlight);
+}
