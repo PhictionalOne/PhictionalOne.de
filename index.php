@@ -104,11 +104,11 @@
                 <span class="w3-text"><a href="pgp-key.txt" target="_blank">
                         <i class="fas fa-key icon" title="PGP"></i></a></span>
                 <a href="mailto:info@phictional.de"><i class="fas fa-envelope" title="Mail"></i></a></span>
-            <a id="Twitter" class="icon" target="_tab" href="https://twitter.com/ST0PPELB4RT">
+            <a id="Twitter" class="icon" target="_tab" href="https://twitter.com/PhictionalOne">
                 <i class="fab fa-twitter icon" title="Twitter"></i></a>
             <a id="mastodon" class="icon" target="_tab" rel="me" href="https://toot.kif.rocks/@phi">
                 <i class="fab fa-mastodon icon" title="Mastodon"></i></a>
-            <a id="Github" class="icon" target="_tab" href="https://github.com/ST0PPELB4RT">
+            <a id="Github" class="icon" target="_tab" href="https://github.com/PhictionalOne">
                 <i class="fab fa-github icon" title="Github"></i></a>
         </div>
     </div>
