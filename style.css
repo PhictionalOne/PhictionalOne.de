@@ -33,17 +33,15 @@ author: Alexander "phi" Goetz
   /* custom color palette */
   --color-olive-light:    #d8ca9d;
   --color-olive:          #a09061;
-  --color-honey-warm:     #ffea9d;
-  --color-honey-mustard:  #ffe5ac;
-  --color-honey-yellow:   #ffe5bd;
-  --color-honey-dark:     #ff312f;
+  --color-olive-dark:     #42441B;
 
   /* Background Image Asset folder */
   --img-olivetree: url('/assets/olivetree-50.jpg');
 
   /* actual variables */
-  --color-highlight: var(--color-olive-light);
-  --img-background: var(--img-olivetree);
+  --color-highlight:   var(--color-olive-light);
+  --color-highlight-2: var(--color-olive);
+  --img-background:    var(--img-olivetree);
 }
 
 body,
@@ -52,6 +50,7 @@ h1 {
   text-shadow: 1px 1px 40px #000000;
   padding-top: 0px;
   margin-top:  0px;
+  text-align: center;
 }
 
 body,
@@ -73,23 +72,28 @@ html {
 }
 
 .svg {
-  height: 10em;
-  weight: 10em;
+  height: 100pt;
+  weight: 100pt;
   margin: 0px;
   padding: 0px;
 }
 
 #phi {
+  fill: white;
+}
+
+#phi:hover {
   fill: var(--color-highlight);
 }
 
 #one {
   fill: var(--color-highlight);
 }
-
+/*
 #one:hover {
    fill: var(--color-honey-dark);
-}
+   fill: var(--color-highlight);
+}*/
 
 .icon:hover {
   color: var(--color-highlight);
