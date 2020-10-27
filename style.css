@@ -22,73 +22,140 @@ Custom CSS for phictional.de,
                ,,,
                ,,,
 
-author: Alexander "phi" Goetz
+author: Alexander "Phi" Goetz
 *******************************************/
 
 :root {
-  /* custom color palette */
-  --color-olive-light:    #d8ca9d;
-  --color-olive:          #a09061;
-  --color-olive-dark:     #42441B;
-  --color-eigengrau:      #16161d;
+    /* custom color palette */
+    --color-olive-light:    #d8ca9d;
+    --color-olive:          #a09061;
+    --color-olive-dark:     #42441B;
+    --color-eigengrau:      #16161d;
 
-  /* Background Image Asset folder */
-  /* --img-olivetree: url('/assets/olivetree-50.jpg'); */
+    /* Background Image Asset folder */
+    /* --img-olivetree: url('/assets/olivetree-50.jpg'); */
 
-  /* Background Image hosted by unsplash.com */
-  --img-olivetree: url('https://images.unsplash.com/photo-1561055447-fc8f0c323031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80');
+    /* Background Image hosted by unsplash.com */
+    --img-shade:     url('https://images.unsplash.com/photo-1603813068349-c70015df0fd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80');
+    --img-olivetree: url('https://images.unsplash.com/photo-1561055447-fc8f0c323031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80');
 
-  /* actual variables */
-  --color-highlight:   var(--color-olive-light);
-  --color-highlight-2: var(--color-olive);
-  --img-background:    var(--img-olivetree);
+    /* actual variables */
+    --color-highlight:   var(--color-olive-light);
+    --color-highlight-2: var(--color-olive);
+    --color-light:       white;
+    --color-dark:        var(--color-eigengrau);
+    --img-background:    var(--img-olivetree);
 }
 
-body,
-h1 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;/*"Raleway", sans-serif;*/
-  */text-shadow: 1px 1px 40px var(--color-eigengrau);*/
-  padding-top: 0px;
-  margin-top:  0px;
-  text-align: center;
-  color: var(--color-eigengrau);
+
+html{
+    box-sizing:border-box;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
 }
 
-body,
-html {
-  height: 100%
+*,*:before,*:after{
+    box-sizing:inherit
+}
+
+body {
+    margin:0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body, html {
+    height: 100%
 }
 
 body, p {
-    color: var(--color-eigengrau);
+    color: var(--color-dark);
+}
+
+h1 {
+    padding-top: 0px;
+    margin-top:  0px;
+  
+    color: var(--color-dark);
+    font-size:48px!important;
+    font-weight:400;
+    text-align: center;
 }
 
 .middle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
     background-color: white;
     border-radius: 5pt;
+    cursor:default;
+}
+
+.subtitle { 
+    font-size:18px!important;
+    text-align:center!important
+}
+
+.padding-large {
+    padding:12px 24px!important
+}
+
+.tooltip, .impressum {
+    position:relative;
+}
+.tooltip .text {
+    display:none
+    
+}
+.tooltip:hover .text {
+    display:inline-block
+}
+.small { 
+    font-size:12px!important
+}
+
+.xlarge { 
+    font-size:24px!important
 }
 
 .social {
+    position:absolute;
+    right:0;
+    bottom:0;
     background-color: white;
-    color: var(--color-eigengrau);
+    color: var(--color-dark);
     border-top-left-radius: 5pt;
+}
+.social a {  
+    color: var(--color-dark);
+}
+
+.impressum {
+    position:absolute;
+    left:0;
+    bottom:0;
+    font-size:24px!important:
+}
+.impressum a {
+    color: white;
+    text-decoration: none
 }
 
 .bgimg {
-  background-color: var(--color-eigengrau);
+  position:relative;
+  color:#fff!important
+  
+  
+  background-color: var(--color-dark);
   background-image: var(--img-background);
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
 
-.emp {
-  color: var(--color-highlight);
-}
-
-.empp {
-  color: var(--color-highlight);
-  font-weight: bolder;
+.highlight {
+    color: var(--color-highlight);
 }
 
 .divider {
@@ -108,11 +175,15 @@ body, p {
 }
 
 .icon {
-    color: var(--color-eigengrau);
+    color: var(--color-dark);
+}
+
+.icon:hover {
+  color: var(--color-highlight);
 }
 
 #phi {
-  fill: var(--color-eigengrau);
+  fill: var(--color-dark);
 }
 
 .middle:hover #phi {
@@ -121,10 +192,6 @@ body, p {
 
 #one {
   fill: var(--color-highlight);
-}
-
-.icon:hover {
-  color: var(--color-highlight);
 }
 
 .noselect {
@@ -136,3 +203,4 @@ body, p {
   -ms-user-select: none;
   user-select: none;
 }
+
