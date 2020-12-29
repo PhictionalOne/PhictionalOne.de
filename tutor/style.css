@@ -1,0 +1,248 @@
+body {
+    --color-eigengrau:   #16161d;
+    --color-olive-light: #d8ca9d;
+    --color-olive:       #a09061;
+
+    --image-olivetree: url(https://images.unsplash.com/photo-1561055447-fc8f0c323031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80);
+
+    background-color: var(--color-eigengrau);
+
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;/*"Courier New", "Times New Roman", serif;*/
+    font-size: 100%;
+    padding: 0 35px;
+    margin: 0 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+    background-color: white;
+    padding: 4vw;
+    width: 60vw;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 300%;
+}
+
+#intro {
+    padding: 0 1vw 1vw 0;
+}
+
+.feedbackbox {
+    font-size: 100%;
+}
+
+.feedbackbox select {
+    font-size: inherit;
+}
+
+.feedbackbox input {
+    font-size: inherit;
+}
+
+.feedbackbox #submit {
+    font-size: inherit;
+    font-weight: bold;
+
+    height: 2em;
+    width: 30%;
+
+    border: none;
+    
+    background-color: var(--color-eigengrau);
+    color: var(--color-olive-light);
+}
+
+.feedbackbox textarea {
+    padding: .5vw;
+    width: 100%;
+    height: 10vw;
+}
+
+.social {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+/* Icons made by fontawesome.com under CC BY 4.0 License https://fontawesome.com/license/free */
+.icon {
+    margin: 5px 0;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+.icon.twitter {
+    background-image: url("icons/twitter-solid.svg");
+}
+.icon.email {
+    background-image: url("icons/envelope-regular.svg");
+}
+.icon.clock {
+    background-image: url("icons/clock-regular.svg");
+}
+.icon.marker {
+    background-image: url("icons/marker-solid.svg");
+    background-position: 3px center;
+}
+.info, .error {
+    border-radius: 4px;
+    background-position: 5px center;
+    padding: 5px 5px 5px 35px;
+    display: inline-block;
+}
+.error {
+    border: 3px solid #d40000 ;
+    background-image: url("icons/error-regular.svg");
+    background-size: 1.5em;
+}
+.info {
+    border: 3px solid #0d29cc ;
+    background-image: url("icons/info-solid.svg");
+    background-size: 1.5em;
+}
+.block {
+    background-color: var(--color-olive-light);
+    height: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.github {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: var(--color-eigengrau);
+}
+
+.description a:link, .description a:visited, .description a:hover, .description a:active{
+    text-decoration: underline;
+}
+.container a:link, .container a:visited, .container a:hover, .container a:active{
+    display: block;
+}
+
+
+.card {
+    width: 340px;
+    height: 220px;
+    border-radius: 3px;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    color: var(--color-olive-light);
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(315deg, var(--color-eigengrau) 0%,var(--color-eigengrau) 0%, var(--color-eigengrau) 100%);
+}
+.card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, var(--color-olive-light) 20%,var(--color-eigengrau) 20%, var(--color-eigengrau) 100%);
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover::before {
+    top: 130%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#eval {
+    width: 35vw;
+    border-collapse: collapse;
+}
+#eval tr {
+    border-bottom: 1px solid var(--color-eigengrau);
+    height: 35px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+#eval tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#eval tr:hover {
+    background-color: #eeeeee;
+    transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-device-width: 1200px) {
+    body {
+        background-color: white;
+        padding: 0 5px;
+    }
+    h1 {
+        font-size: 250%;
+    }
+    .icon {
+        background-size: 1.1em;
+    }
+    .icon.marker {
+        background-position: 0 center;
+    }
+    .info {
+        background-size: 1.5em;
+    }
+    .content {
+        margin: 0 auto;
+        border-radius: 0px;
+        padding: 0px;
+        width: 95vw;
+    }
+    .block {
+        width: 200px;
+    }
+    ul li{
+        margin-bottom:3px;
+    }
+    .card {
+        word-wrap: break-word;
+        font-size: 140%;
+        width: 28vw;
+        height: 17vw;
+    }
+    #eval {
+        width: 90vw;;
+    }
+}
+@media only screen and (max-device-width: 680px) {
+    body {
+        background-color: white;
+        padding: 0 5px;
+        width: 100vw;
+    }
+    .content {
+        width: 99vw;
+    }
+    .block {
+        width: 120px;
+    }
+    .info, .error {
+        width: 85vw;
+    }
+    .container {
+        justify-content: center;
+        align-content: center;
+    }
+    .card {
+        width: 80vw;
+        height: 50vw;
+    }
+    #eval {
+        width: 95vw;
+    }
+}

@@ -31,6 +31,7 @@ author: Alexander "Phi" Goetz
     --color-olive:          #a09061;
     --color-olive-dark:     #42441B;
     --color-eigengrau:      #16161d;
+    --color-pumpkin:        #F65318;
 
     /* Background Image Asset folder */
     /* --img-olivetree: url('/assets/olivetree-50.jpg'); */
@@ -41,11 +42,23 @@ author: Alexander "Phi" Goetz
 
     /* actual variables */
     --color-highlight:   var(--color-olive-light);
+/*     --color-highlight:   var(--color-pumpkin); */
     --color-highlight-2: var(--color-olive);
     --color-light:       white;
     --color-dark:        var(--color-eigengrau);
     --img-background:    var(--img-olivetree);
 }
+
+@font-face {
+    font-family: 'Hellvetica';
+    src: url('Hellvetica.tff') format('truetype'),
+        url('Hellvetica.woff2') format('woff2'),
+        url('Hellvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 html{
